@@ -1,0 +1,21 @@
+.keno-product-grid{
+    .quantity{
+          input.input-text.qty {
+            padding: 9px 16px;
+            width: 101px;
+        } 
+    }
+    button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+            background-color: var(--it-theme-1) !important;
+    }
+    .product_meta{
+       .sku_wrapper{
+        display: block;
+       }
+       .posted_in{
+        display: block;
+       }
+    }
+   
+  
+}

@@ -1,0 +1,216 @@
+# Copyright (C) 2025 Themevander
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Keno 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/keno\n"
+"POT-Creation-Date: 2024-10-28 18:29:08+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:18
+msgid "!404 Error"
+msgstr ""
+
+#: 404.php:32
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. translators: 1: title.
+
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:52
+msgid "Primary"
+msgstr ""
+
+#: functions.php:128
+msgid "Keno Pattern"
+msgstr ""
+
+#: functions.php:129
+msgctxt "Block pattern description"
+msgid "A description of the pattern"
+msgstr ""
+
+#: functions.php:130
+msgid "Hello, World!"
+msgstr ""
+
+#: functions.php:137
+msgid "Fancy Paragraph"
+msgstr ""
+
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not supported
+#.     by chosen font(s), translate this to 'off'. Do not translate into your
+#. own language.
+
+#: inc/common/theme-scripts.php:47
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/common/theme-widgets.php:11
+msgid "Sidebar"
+msgstr ""
+
+#: inc/common/theme-widgets.php:13 inc/common/theme-widgets.php:24
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/common/theme-widgets.php:22
+msgid "Footer"
+msgstr ""
+
+#. translators: %s: post date.
+
+#: inc/template-tags.php:30
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+
+#: inc/template-tags.php:46
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+
+#: inc/template-tags.php:66
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+
+#: inc/template-tags.php:73
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+
+#: inc/template-tags.php:83
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+
+#: inc/template-tags.php:100
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/woocommerce.php:17
+msgid "Woocommerce Sidebar"
+msgstr ""
+
+#: index.php:25
+msgid "Blog"
+msgstr ""
+
+#. translators: %s: search query.
+
+#: search.php:24
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:45
+msgid "Previous:"
+msgstr ""
+
+#: single.php:46
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:43
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:16 template-parts/content.php:44
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:20
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:85
+msgid "Read More"
+msgstr ""
+
+#: template-parts/footer/footer-default.php:20
+msgid "All rights reserved."
+msgstr ""
+
+#: template-parts/footer/footer-default.php:23
+msgid "Theme Developed By"
+msgstr ""
+
+#: template-parts/footer/footer-default.php:25
+msgid "https://techvander.com/"
+msgstr ""
+
+#: template-parts/footer/footer-default.php:25
+msgid "Techvander"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "Keno"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Keno is fast, fully customizable & beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Themevander"
+msgstr ""

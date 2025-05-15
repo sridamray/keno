@@ -1,0 +1,18 @@
+// comment css
+
+.comment-respond{
+    .form-submit{
+        input.submit{
+            background-color: var(--it-theme-1);
+            color: var(--it-common-white);
+            border: 1px solid transparent;
+            padding: 15px 30px;
+            transition: .3s all;
+            &:hover{
+                background-color: var(--it-common-white);
+                color: var(--it-common-black);
+                border: 1px solid var(--it-theme-1);
+            }
+        }
+    }
+}

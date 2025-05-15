@@ -1,0 +1,32 @@
+.keno-product-grid .quantity input.input-text.qty {
+  padding: 9px 16px;
+  width: 101px;
+}
+.keno-product-grid button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+  background-color: var(--it-theme-1) !important;
+}
+.keno-product-grid .product_meta .sku_wrapper {
+  display: block;
+}
+.keno-product-grid .product_meta .posted_in {
+  display: block;
+}
+
+.comment-respond .form-submit input.submit {
+  background-color: var(--it-theme-1);
+  color: var(--it-common-white);
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  transition: 0.3s all;
+}
+.comment-respond .form-submit input.submit:hover {
+  background-color: var(--it-common-white);
+  color: var(--it-common-black);
+  border: 1px solid var(--it-theme-1);
+}
+
+.tutor-wrap {
+  padding: 80px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

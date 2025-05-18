@@ -48,6 +48,10 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.1 (Released: 18 May, 2025) =
+- Add Theme Body Typography
+
+
 = 1.2.0 (Released: 16 May, 2025) =
 - Add Woocommerce Input Field css
 - Added Tutor Lms Support 

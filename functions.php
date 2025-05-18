@@ -9,7 +9,7 @@
 
 if ( ! defined( 'KENO_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'KENO_S_VERSION', '1.2.0' );
+	define( 'KENO_S_VERSION', '1.2.1' );
 }
 
 /**

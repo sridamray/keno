@@ -192,6 +192,45 @@ if ( class_exists('Kirki') ) {
 			],
 		]
 	);
+
+	new \Kirki\Section(
+		'keno_general_typography_settings',
+		[
+			'title'       => esc_html__( 'Keno Typography Settings', 'keno' ),
+			'panel'       => 'keno_customizer_panel',
+			'priority'    => 160,
+		]
+	);
+
+	new \Kirki\Field\Typography(
+	[
+		'settings'    => 'keno_typography',
+		'label'       => esc_html__( 'Body Typography', 'keno' ),
+		'section'     => 'keno_general_typography_settings',
+		'priority'    => 10,
+		'transport'   => 'auto',
+		'default'     => [
+			'font-family'     => 'Roboto',
+			'variant'         => 'regular',
+			'font-style'      => 'normal',
+			'color'           => '#333333',
+			'font-size'       => '14px',
+			'line-height'     => '1.5',
+			'letter-spacing'  => '0',
+			'text-transform'  => 'none',
+			'text-decoration' => 'none',
+			'text-align'      => 'left',
+		],
+		'output'      => [
+			[
+				'element' => 'body',
+			],
+		],
+	]
+);
+
+
+
 	
 
 

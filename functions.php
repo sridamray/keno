@@ -9,7 +9,7 @@
 
 if ( ! defined( 'KENO_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'KENO_S_VERSION', '1.2.1' );
+	define( 'KENO_S_VERSION', '1.2.2' );
 }
 
 /**
@@ -106,6 +106,36 @@ function keno_setup() {
 	add_theme_support( "align-wide" );
 	 add_editor_style( 'editor-style.css' );
 	 add_theme_support( 'elementor' );
+
+	 
+// Theme Widget
+require_once get_template_directory(). '/inc/common/theme-widgets.php';
+// Theme Script
+require_once get_template_directory(). '/inc/common/theme-scripts.php';
+
+
+
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+
 }
 add_action( 'after_setup_theme', 'keno_setup' );
 
@@ -142,32 +172,6 @@ add_action( 'init', 'keno_register_block_patterns' );
 
 
 
-// Theme Widget
-require_once get_template_directory(). '/inc/common/theme-widgets.php';
-// Theme Script
-require_once get_template_directory(). '/inc/common/theme-scripts.php';
-
-
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.

@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.2 (Released: 18 May, 2025) =
+- WordPress Latest Version Loadtext domain issue fix
+
 = 1.2.1 (Released: 18 May, 2025) =
 - Add Theme Body Typography
 

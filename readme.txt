@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.3 (Released: 22 May, 2025) =
+- Added Preloader
+
 = 1.2.2 (Released: 18 May, 2025) =
 - WordPress Latest Version Loadtext domain issue fix
 

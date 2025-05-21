@@ -76,6 +76,31 @@ if ( class_exists('Kirki') ) {
 
 
 	new \Kirki\Section(
+		'keno_general_general_settings',
+		[
+			'title'       => esc_html__( 'Keno General Settings', 'keno' ),
+			'panel'       => 'keno_customizer_panel',
+			'priority'    => 160,
+		]
+	);
+
+	new \Kirki\Field\Checkbox_Switch(
+	[
+		'settings'    => 'keno_general_prloader_settings',
+		'label'       => esc_html__( 'Preloader Enable/Disable', 'keno' ),
+		'section'     => 'keno_general_general_settings',
+		'default'     => 'on',
+		'choices'     => [
+			'on'  => esc_html__( 'Enable', 'keno' ),
+			'off' => esc_html__( 'Disable', 'keno' ),
+		],
+	]
+);
+
+
+
+
+	new \Kirki\Section(
 		'keno_general_color_settings',
 		[
 			'title'       => esc_html__( 'Keno Color Settings', 'keno' ),

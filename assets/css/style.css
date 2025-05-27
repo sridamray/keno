@@ -298,6 +298,7 @@ input.main-search-input::placeholder {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
+  text-align: center;
 }
 .back-to-top:hover {
   background-color: var(--it-heading-primary);

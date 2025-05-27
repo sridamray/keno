@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.4 (Released: 28 May, 2025) =
+- Added Back To Top
+
 = 1.2.3 (Released: 22 May, 2025) =
 - Added Preloader
 

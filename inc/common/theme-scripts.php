@@ -8,6 +8,7 @@ function keno_scripts() {
 	// theme CSS
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'keno-bootstrap', get_template_directory_uri().'/assets/css/bootstrap.css', array() );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/assets/css/font-awesome-pro.css', array() );
 	wp_enqueue_style( 'keno-woocommerce', get_template_directory_uri().'/woocommerce.css', array() );
 	wp_enqueue_style( 'theme-style', get_template_directory_uri().'/assets/css/style.css', array() );
 	wp_enqueue_style( 'theme-core', get_template_directory_uri().'/assets/css/theme-core.css', array() );

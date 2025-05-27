@@ -133,6 +133,35 @@ function keno_recommend_plugin() {
 add_action('admin_notices', 'keno_recommend_plugin');
 
 
+// Back to top
+
+function keno_back_to_top() {
+    ?>
+    <a href="#" class="back-to-top">
+        <i class="fa-light fa-arrow-up"></i>
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTop.style.opacity = '1';
+                    backToTop.style.visibility = 'visible';
+                } else {
+                   backToTop.style.opacity = '0';
+                    backToTop.style.visibility = 'hidden';
+                }
+            });
+            backToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+    <?php
+}
+
+
 
 
 

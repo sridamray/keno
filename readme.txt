@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.5 (Released: 02 June, 2025) =
+- Change Screenshoot Image
+
 = 1.2.4 (Released: 28 May, 2025) =
 - Added Back To Top
 

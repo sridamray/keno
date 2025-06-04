@@ -1,8 +1,18 @@
 (function($) {
   "use strict";
 		$(document).ready(function(){
- 
-    	
+ 	var windowOn = $(window)
+    ///////////////////////////////////////////////////
+	// 07. Sticky Header Js
+	windowOn.on('scroll', function () {
+		var scroll = windowOn.scrollTop();
+		if (scroll < 400) {
+			$(".header-main").removeClass("header-sticky");
+		} else {
+			$(".header-main").addClass("header-sticky");
+		}
+	});
+
     // 09. Sidebar Js
 	// When clicked or focused, add the class
 	$(".it-menu-bar").on("click", function () {

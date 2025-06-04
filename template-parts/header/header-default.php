@@ -16,7 +16,7 @@
   </div>
   </div>
 </div>
-<section class="header header-default">
+<section class="header header-main header-default">
 	<div class="container">
 	<header id="masthead" class="site-header">
 		<div class="row align-items-center">

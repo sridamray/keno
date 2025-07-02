@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.7 (Released: 02 July, 2025) =
+- Preloader Functions Updated
+
 = 1.2.5 (Released: 02 June, 2025) =
 - Change Screenshoot Image
 

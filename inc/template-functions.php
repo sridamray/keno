@@ -112,7 +112,7 @@ add_action( 'wp_enqueue_scripts', 'keno_append_fallback_font_css', 100 );
 function theme_preloader() {
     get_template_part('template-parts/preloader');
 }
-add_action('exoplus_preloader', 'theme_preloader');
+add_action('keno_preloader', 'theme_preloader');
 
 
 

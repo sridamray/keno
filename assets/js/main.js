@@ -1,6 +1,6 @@
 (function($) {
   "use strict";
-		$(document).ready(function(){
+	$(document).ready(function(){
  	var windowOn = $(window)
     ///////////////////////////////////////////////////
 	// 07. Sticky Header Js
@@ -72,15 +72,12 @@ if ($('.it-menu-content').length && $('.it-menu-mobile').length) {
 }
 
 
- function loader() {
-        $(window).on('load', function() {
-            // Animate loader off screen
-            $(".preloader").addClass('loaded');                    
-            $(".preloader").delay(600).fadeOut();                       
-        });
-    }
 
-loader();
+  ///////////////////////////////////////////////////
+  // 01. PreLoader Js
+  windowOn.on("load", function () {
+    $("#preloader").fadeOut(500);
+  });
 
 
 

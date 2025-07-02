@@ -28,11 +28,11 @@
 
 <?php
 $keno_general_prloader_settings = get_theme_mod('keno_general_prloader_settings', true);
-	if(!empty($keno_general_prloader_settings)){
-	do_action( 'exoplus_preloader' );
-	}
-
+if ( ! empty( $keno_general_prloader_settings ) && ! isset( $_GET['elementor-preview'] ) ) {
+    do_action( 'keno_preloader' );
+}
 ?>
+
 
 <?php keno_back_to_top(); ?>
 

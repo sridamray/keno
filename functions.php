@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Keno functions and definitions
  *
@@ -7,9 +8,9 @@
  * @package Keno
  */
 
-if ( ! defined( 'KENO_S_VERSION' ) ) {
+if (! defined('KENO_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( 'KENO_S_VERSION', '1.2.7' );
+	define('KENO_S_VERSION', '1.2.8');
 }
 
 /**
@@ -19,17 +20,18 @@ if ( ! defined( 'KENO_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function keno_setup() {
+function keno_setup()
+{
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on Keno, use a find and replace
 		* to change 'keno' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'keno', get_template_directory() . '/languages' );
+	load_theme_textdomain('keno', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
 		* Let WordPress manage the document title.
@@ -37,19 +39,19 @@ function keno_setup() {
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'keno' ),
+			'menu-1' => esc_html__('Primary', 'keno'),
 		)
 	);
 
@@ -83,7 +85,7 @@ function keno_setup() {
 	);
 
 	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
@@ -100,44 +102,42 @@ function keno_setup() {
 		)
 	);
 
-	add_theme_support( 'woocommerce' );
-	add_theme_support( "wp-block-styles" );
-	add_theme_support( "responsive-embeds" );
-	add_theme_support( "align-wide" );
-	 add_editor_style( 'editor-style.css' );
-	 add_theme_support( 'elementor' );
-
-	 
-// Theme Widget
-require_once get_template_directory(). '/inc/common/theme-widgets.php';
-// Theme Script
-require_once get_template_directory(). '/inc/common/theme-scripts.php';
+	add_theme_support('woocommerce');
+	add_theme_support("wp-block-styles");
+	add_theme_support("responsive-embeds");
+	add_theme_support("align-wide");
+	add_editor_style('editor-style.css');
+	add_theme_support('elementor');
 
 
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
+	// Theme Widget
+	require_once get_template_directory() . '/inc/common/theme-widgets.php';
+	// Theme Script
+	require_once get_template_directory() . '/inc/common/theme-scripts.php';
 
 
+
+	/**
+	 * Implement the Custom Header feature.
+	 */
+	require get_template_directory() . '/inc/custom-header.php';
+
+	/**
+	 * Custom template tags for this theme.
+	 */
+	require get_template_directory() . '/inc/template-tags.php';
+
+	/**
+	 * Functions which enhance the theme by hooking into WordPress.
+	 */
+	require get_template_directory() . '/inc/template-functions.php';
+
+	/**
+	 * Customizer additions.
+	 */
+	require get_template_directory() . '/inc/customizer.php';
 }
-add_action( 'after_setup_theme', 'keno_setup' );
+add_action('after_setup_theme', 'keno_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -146,29 +146,31 @@ add_action( 'after_setup_theme', 'keno_setup' );
  *
  * @global int $content_width
  */
-function keno_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'keno_content_width', 640 );
+function keno_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('keno_content_width', 640);
 }
-add_action( 'after_setup_theme', 'keno_content_width', 0 );
+add_action('after_setup_theme', 'keno_content_width', 0);
 
-function keno_register_block_patterns() {
-    register_block_pattern(
-        'keno/keno-pattern',
-        array(
-            'title'       => __( 'Keno Pattern', 'keno' ),
-            'description' => _x( 'A description of the pattern', 'Block pattern description', 'keno' ),
-            'content'     => '<!-- wp:paragraph --><p>' . __( 'Hello, World!', 'keno' ) . '</p><!-- /wp:paragraph -->',
-        )
-    );
-     register_block_style(
-        'core/paragraph',
-        array(
-            'name'  => 'fancy-paragraph',
-            'label' => __( 'Fancy Paragraph', 'keno' ),
-        )
-    );
+function keno_register_block_patterns()
+{
+	register_block_pattern(
+		'keno/keno-pattern',
+		array(
+			'title'       => __('Keno Pattern', 'keno'),
+			'description' => _x('A description of the pattern', 'Block pattern description', 'keno'),
+			'content'     => '<!-- wp:paragraph --><p>' . __('Hello, World!', 'keno') . '</p><!-- /wp:paragraph -->',
+		)
+	);
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'  => 'fancy-paragraph',
+			'label' => __('Fancy Paragraph', 'keno'),
+		)
+	);
 }
-add_action( 'init', 'keno_register_block_patterns' );
+add_action('init', 'keno_register_block_patterns');
 
 
 
@@ -176,7 +178,7 @@ add_action( 'init', 'keno_register_block_patterns' );
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
@@ -185,7 +187,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load WooCommerce compatibility file.
  */
-if ( class_exists( 'WooCommerce' ) ) {
+if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 

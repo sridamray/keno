@@ -4,7 +4,7 @@ Theme URI: https://keno.techvander.com/keno-preview/
 Author: Themevander
 Author URI: https://techvander.com/
 Description: Keno is fast, fully customizable & beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront
-Version: 1.2.7
+Version: 1.2.8
 Tested up to: 6.7
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -519,11 +519,11 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: var( --it-theme-2);
+  color: var(--it-theme-2);
 }
 
 a:focus {
-  outline:  dotted  var( --it-theme-2);
+  outline: dotted var(--it-theme-2);
 }
 
 a:hover,
@@ -648,7 +648,6 @@ textarea {
   left: -999em;
   top: 0;
 }
-
 
 .main-navigation ul ul li.focus > ul {
   display: block;
@@ -953,24 +952,24 @@ textarea {
   margin-bottom: 1.5em;
 }
 
-
 .postbox__content-box a {
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
 
 .postbox-content a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav.wp-block-query-pagination a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .default-header .main-navigation ul li .sub-menu li {
-    margin-left: 0;
-    padding: 5px;
+  margin-left: 0;
+  padding: 5px;
 }
 
-.default-header .main-navigation ul li .sub-menu li:hover, .default-header .main-navigation ul li .sub-menu li:focus-within  {
-    background: var(--it-theme-1);
+.default-header .main-navigation ul li .sub-menu li:hover,
+.default-header .main-navigation ul li .sub-menu li:focus-within {
+  background: var(--it-theme-1);
 }

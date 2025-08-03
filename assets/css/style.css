@@ -12,6 +12,15 @@
   display: block;
 }
 
+a.button.add_to_cart_button .ajax_add_to_cart .added {
+  display: none;
+}
+
+a.added_to_cart.wc-forward {
+  display: block;
+  text-align: center;
+}
+
 .comment-respond .form-submit input.submit {
   background-color: var(--it-theme-1);
   color: var(--it-common-white);

@@ -48,6 +48,12 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.2.9 (Released: 03 August, 2025) =
+- Header Style Added
+
+= 1.2.8 (Released: 03 August, 2025) =
+- Woocommerce Shop Updated
+
 = 1.2.7 (Released: 02 July, 2025) =
 - Preloader Functions Updated
 

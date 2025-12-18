@@ -17,7 +17,7 @@
 					 <?php echo esc_html( get_bloginfo('name') ); ?> 
 				</a>
 				<span> | </span>
-				<span><?php esc_html__('All rights reserved.', 'keno'); ?></span>
+				<span><?php echo esc_html__('All rights reserved.', 'keno'); ?></span>
 				<span class="sep"> | </span>
 					<?php
 					echo esc_html__('Theme Developed By', 'keno');

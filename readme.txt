@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.3.0 (Released: 18 April, 2026) =
+- Footer File update
+
 = 1.2.9 (Released: 03 August, 2025) =
 - Header Style Added
 

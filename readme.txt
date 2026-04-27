@@ -48,6 +48,9 @@ screenshoot.png
 
 == Changelog ==
 
+= 1.3.1 (Released: 28 April, 2026) =
+- Header CSS Update
+
 = 1.3.0 (Released: 18 April, 2026) =
 - Footer File update
 
